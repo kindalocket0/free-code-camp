@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1 id="title">Science Survey Form</h1>
+        <p id="description">
+            Thank you for helping improve SCIENCE
+        </p>
+        <form action="POST" id="survey-form">
+            <div class="input-group">
+                <label for="name" id="name-label" class="group-label" >Name</label>
+                <input class="text-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+    
+            </div>
+            <div class="input-group">
+                <label for="email" id="email-label" class="group-label" >Email</label>
+                <input class="text-input" type="email" name="email" id="email" placeholder="Enter your email" required>
+    
+            </div>
+            <div class="input-group">
+                <label for="number" id="number-label" class="group-label" >Age (Optional)</label>
+                <input class="text-input" type="number" name="number" id="number" min="0" max="100" placeholder="Enter your age
+                ">
+    
+            </div>
+            <div class="input-group">
+                <p id="current-role">Pick your current science level</p>
+                <select name="dropdown" id="dropdown">
+                    <option disabled selected value>Select current role</option>
+                    <option value="non-sciencer">Non-Sciencer</option>
+                    <option value="amateur-sciencer">Amateur Sciencer</option>
+                    <option value="professional-sciencer">Professional Sciencer</option>
+                    <option value="god-sciencer">God Sciencer</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <p>How important is science to you</p>
+                <label for=""><input type="radio" name="science-importance" id="" value="important">Important</label>
+                <label><input type="radio" name="science-importance" id="" value="super-important">Super Important</label>
+                <label><input type="radio" name="science-importance" id="" value="super-duper-important">Super Duper Important</label>
+            </div>
+    
+            <div class="input-group">
+                <p>What do you love about doing science?</p>
+                <label for=""><input type="checkbox" name="love" id="" value="money">The Money</label>
+                <label for=""><input type="checkbox" name="love" id="" value="girls">The Girls</label>
+                <label for=""><input type="checkbox" name="love" id="" value="parties">The Parties</label>
+                <label for=""><input type="checkbox" name="love" id="" value="world-dom">The World Domination</label>
+    
+            </div>
+    
+            <div class="input-group">
+                <p>Any comments or suggestions</p>
+                <textarea class="text-input" name="" id="" cols="30" rows="10" placeholder="Enter your thoughts here..."></textarea>
+            </div>
+    
+            <button id="submit">Submit</button>
+        </form>
+
+    </div>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
